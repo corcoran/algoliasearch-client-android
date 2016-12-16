@@ -138,7 +138,7 @@ public class Query extends AbstractQuery {
 
     /**
      * @param enabled If set to false, disable typo-tolerance on numeric tokens.
-     *                Default to true.
+     *                Defaults to true.
      */
     public @NonNull Query setAllowTyposOnNumericTokens(Boolean enabled) {
         return set(KEY_ALLOW_TYPOS_ON_NUMERIC_TOKENS, enabled);
@@ -152,7 +152,7 @@ public class Query extends AbstractQuery {
 
     /**
      * @param enabled If set to false, this query will not be taken into account in
-     *                analytics feature. Default to true.
+     *                analytics feature. Defaults to true.
      */
     public @NonNull Query setAnalytics(Boolean enabled) {
         return set(KEY_ANALYTICS, enabled);
@@ -450,7 +450,7 @@ public class Query extends AbstractQuery {
      * Can represent either a boolean or a list of language codes, see https://www.algolia.com/doc/faq/searching/how-does-ignoreplurals-work.
      */
     public static final class IgnorePlurals {
-        /** Wether plurals are ignored. */
+        /** Whether plurals are ignored. */
         public final boolean enabled;
 
         /** A list containing every active language's code. When {@code null}, all supported languages are be used. */
@@ -560,7 +560,7 @@ public class Query extends AbstractQuery {
 
     /**
      * If set to true, plural won't be considered as a typo (for example
-     * car/cars will be considered as equals). Default to false.
+     * car/cars will be considered as equals). Defaults to false.
      */
     public @NonNull Query setIgnorePlurals(boolean enabled) {
         return set(KEY_IGNORE_PLURALS, enabled);
@@ -1023,7 +1023,7 @@ public class Query extends AbstractQuery {
 
     /**
      * @param enabled If set to false, this query will not use synonyms defined in
-     *                configuration. Default to true.
+     *                configuration. Defaults to true.
      */
     public @NonNull Query setSynonyms(Boolean enabled) {
         return set(KEY_SYNONYMS, enabled);
